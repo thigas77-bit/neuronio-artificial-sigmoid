@@ -12,7 +12,7 @@ O neurônio recebe entradas, aplica pesos e um bias, calcula o somatório ponder
 
 ```
 Entradas        Pesos           Somatório         Ativação
-x1 = i   →   w1 = 10  ─┐
+x1 = i   →   w1 = 10  ─┬
 x2 = 0   →   w2 = 10  ──→  Σ(w*x) + b  →  Sigmoid  →  saída
 x3 = 0   →   w3 = -2  ─┘        ↑
                                 b = 3 (bias)
@@ -37,19 +37,19 @@ saída = 1 / (1 + e^(-somatorio))
 O gráfico gerado mostra o comportamento da saída do neurônio conforme o valor de x1 varia de -20 até 19:
 
 - Valores muito negativos → saída próxima de 0
-- - Valores muito positivos → saída próxima de 1
-  - - Transição suave entre 0 e 1 — característica da função Sigmoide
-   
-    - ## 🛠️ Tecnologias Utilizadas
-   
-    - - Python 3
-      - - Math — cálculo do número de Euler
-        - - Matplotlib — geração do gráfico
-         
-          - ## ▶️ Como Executar
-         
-          - **Google Colab**
-         
-          - 1. Acesse o notebook pelo link do repositório
-            2. 2. Clique em "Abrir no Colab"
-               3. 3. Execute todas as células
+- Valores muito positivos → saída próxima de 1
+- Transição suave entre 0 e 1 — característica da função Sigmoide
+
+## 🛠️ Tecnologias Utilizadas
+
+- Python 3
+- Math — cálculo do número de Euler
+- Matplotlib — geração do gráfico
+
+## ▶️ Como Executar
+
+**Google Colab**
+
+1. Acesse o notebook pelo link do repositório
+2. Clique em "Abrir no Colab"
+3. Execute todas as células
